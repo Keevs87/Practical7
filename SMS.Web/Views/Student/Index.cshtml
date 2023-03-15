@@ -14,13 +14,15 @@
     </thead>
     <tbody>
             <!-- Add suitable razor loop to display each student in a row -->
+            @foreach (var s in Model)
+            {
             <tr>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td>@s.Id</td>
+                <td>@s.Name</td>
+                <td>@s.Course</td>
+                <td>@s.Age</td>
                 <td></td>
             </tr>
-        
+            }
     </tbody>
 </table>
